@@ -95,7 +95,7 @@ elif option == "Operational Tasks":
                                          product_level,
                                          supplier_id)
                         st.success(f"Product {product_name} Added Successfully")
-                    except exception as e:
+                    except Exception as e:
                         st.error(f"Error adding product: {e}")
 
 
