@@ -1,12 +1,12 @@
 import mysql.connector
 
-
 def connect_to_db():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="password",
-        database="python_sql_project"
+        host = st.secrets["mysql"]["host"],
+        port = st.secrets["mysql"]["port"],
+        user = st.secrets["mysql"]["user"],
+        password = st.secrets["mysql"]["password"],
+        database = st.secrets["mysql"]["database"]
     )
 
 
