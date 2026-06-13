@@ -1,6 +1,3 @@
-from idlelib import query
-from unittest import result
-
 import mysql.connector
 
 
