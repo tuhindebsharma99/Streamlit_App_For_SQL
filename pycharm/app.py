@@ -14,7 +14,7 @@ from db_functions import (
     get_product_history,
     place_reorder,
     get_pending_reorders,
-    mark_reorder_as_received
+    mark_reorder_as_received,
 )
 
 # sidebar
