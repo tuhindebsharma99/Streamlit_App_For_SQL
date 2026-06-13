@@ -152,7 +152,7 @@ elif option == "Operational Tasks":
                 reorder_id = selected_reorder['reorder_id']
                 mark_reorder_as_received(cursor, db, reorder_id)
                 st.success(f"Successfully accepted reorder {reorder_id} for {selected_reorder['product_name']}")
-                st.rerun # To clear the processed orders from the list
+                st.rerun() # To clear the processed orders from the list
             except Exception as e:
                 st.error(f"Error accepting reorder: {e}")
         else:
