@@ -1,4 +1,4 @@
-import mysql-connector-python
+import mysql.connector
 
 
 def connect_to_db():
